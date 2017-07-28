@@ -5,7 +5,7 @@ This project enables deployment of a Mattermost server in a multi-node productio
 [![Build Status](https://travis-ci.org/mattermost/mattermost-docker.svg?branch=master)](https://travis-ci.org/mattermost/mattermost-docker)
 
 Notes:
-- The default Mattermost edition for this repo has changed from team edition to enterprise edition. Please see [Choose Edition](#choose-edition-to-install) section.
+- The default Mattermost edition is **team edition**
 - To install this Docker project on AWS Elastic Beanstalk please see [AWS Elastic Beanstalk Guide](./contrib/aws/README.md).
 - To run Mattermost on Kubernetes you can start with the [manifest examples in the kubernetes folder](contrib/kubernetes/README.md)
 - To install Mattermost without Docker directly onto a Linux-based operating systems, please see [Admin Guide](https://docs.mattermost.com/guides/administrator.html#installing-mattermost).
@@ -18,15 +18,6 @@ The following instructions deploy Mattermost in a production configuration using
 
 * [docker]
 * [docker-compose]
-
-### Choose Edition to Install
-
-If you want to install enterprise edition, you can skip this section.
-
-To install the team edition, comment out the following line in docker-compose.yaml file:
-```
-dockerfile: Dockerfile-enterprise
-```
 
 ### Database
 
